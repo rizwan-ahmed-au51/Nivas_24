@@ -5,9 +5,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nivas_24</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./flicker.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+        integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }
+            else {
+                $('nav').removeClass('black');
+            }
+        })
+        $(document).ready(function () {
+            $('.menu h4').click(function () {
+                $("nav ul").toggleClass("active")
+            })
+        })
+    </script>
 </head>
 
 <body>
+    <div class="responsive-bar">
+        <div class="logo">
+            <img src="./assets/Main-Logo-Top.jpg" alt="logo" />
+        </div>
+        <div class="menu">
+            <h4>Menu</h4>
+        </div>
+    </div>
+    <nav>
+        <div class="logo">
+            <img src="./assets/Main-Logo-Top.jpg" alt="logo" />
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="right">
+                        <h1>No more worries about</h1>
+                        <div class="parent">
+                            <div id="text"></div>
+                        </div>
+                        <h1>your remote property.
+                        </h1>
+                        <div class="button">
+                            <a href="#">
+                                <span>Button</span>
+                                <span>Button</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="left">
+                        <img src="./assets/home-page-pic.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cards">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 us">
+                    <div class="card">
+                        <img src="./assets/0ne.png" alt="">
+                        <p>7000+ Happy Customers</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/worldwide.png" alt="">
+                        <p>Customers from 50+ Countries</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/india.png" alt="">
+                        <p>10+ States and 20+ Cities in India</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/home.png" alt="">
+                        <p>2000+ Properties</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/electrician.png" alt="">
+                        <p>7200+ Service Partners</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
